@@ -9,7 +9,7 @@ description: "Use to choose an appropriate reasoning depth, tool plan, evidence 
 
 Use to choose an appropriate reasoning depth, tool plan, evidence budget, and execution mode based on consequence, uncertainty, reversibility, complexity, and available host capabilities. It recommends a workflow budget but cannot change the active model itself.
 
-This is a ChatGPT Web instruction package. It is intentionally separated from the full Codex catalog: scripts, binaries, local hooks, source snapshots, and platform-specific executables are not bundled here.
+This package originated as a ChatGPT/Codex Web instruction pack and has been adapted for Claude Code: it references Claude's actual model tiers (Haiku 4.5, Sonnet 5, Opus 5, Fable 5) and reasoning controls (`/fast`, extended thinking, host effort tiers) rather than generic placeholders. Scripts, binaries, local hooks, and platform-specific executables are still not bundled here — this is instruction-only.
 
 ## Source aliases
 

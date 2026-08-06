@@ -12,5 +12,12 @@
       "retained_license_files": []
     }
   ],
-  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included.",
+  "claude_adaptation": {
+    "date": "2026-08-05",
+    "changes": [
+      "Restored the Output section's compact-block template, which was truncated/missing in the original condensation.",
+      "Replaced generic 'host-available model/effort' language with Claude-specific controls: model tiers (Haiku 4.5, Sonnet 5, Opus 5, Fable 5), the /fast toggle, and extended thinking / host effort tiers."
+    ]
+  }
 }
