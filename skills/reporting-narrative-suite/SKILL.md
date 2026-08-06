@@ -15,14 +15,14 @@ Recognize these original skill names as explicit aliases: `timeline-report`, `we
 
 | Original alias | Read | Use when |
 |---|---|---|
-| `timeline-report` | `timeline-report/SKILL.md` | Want one comprehensive "Journey Into [Project]" narrative covering the whole claude-mem history in a single report. |
-| `weekly-digests` | `weekly-digests/SKILL.md` | Want the same history as `timeline-report` but split into one chapter per ISO week, with carry-forward continuity between chapters. Chapter count is driven by the number of weeks in the data, not fixed. |
-| `wowerpoint` | `wowerpoint/SKILL.md` | Want one existing document turned into a slide-deck PDF. Slide decks only — refer the user to the `notebooklm` CLI directly for video/podcast output. |
-| `what-the` | `what-the/SKILL.md` | Want a plain-English who/what/where/why/when breakdown of something technical, with no report artifact needed. |
-| `design-is` | `design-is/SKILL.md` | Want a UI/design artifact audited against Dieter Rams' ten principles, ending in a `/make-plan` handoff for new-design/refine/redesign. Not for routine code review or copy edits. |
-| `pathfinder` | `pathfinder/SKILL.md` | Want the codebase mapped into feature-grouped flowcharts with duplication identified and a proposed unified architecture, ending in per-system `/make-plan` handoff prompts. Does not write implementation code itself. |
+| `timeline-report` | `workflows/timeline-report.md` | Want one comprehensive "Journey Into [Project]" narrative covering the whole claude-mem history in a single report. |
+| `weekly-digests` | `workflows/weekly-digests.md` | Want the same history as `timeline-report` but split into one chapter per ISO week, with carry-forward continuity between chapters. Chapter count is driven by the number of weeks in the data, not fixed. |
+| `wowerpoint` | `workflows/wowerpoint.md` | Want one existing document turned into a slide-deck PDF. Slide decks only — refer the user to the `notebooklm` CLI directly for video/podcast output. |
+| `what-the` | `workflows/what-the.md` | Want a plain-English who/what/where/why/when breakdown of something technical, with no report artifact needed. |
+| `design-is` | `workflows/design-is.md` | Want a UI/design artifact audited against Dieter Rams' ten principles, ending in a `/make-plan` handoff for new-design/refine/redesign. Not for routine code review or copy edits. |
+| `pathfinder` | `workflows/pathfinder.md` | Want the codebase mapped into feature-grouped flowcharts with duplication identified and a proposed unified architecture, ending in per-system `/make-plan` handoff prompts. Does not write implementation code itself. |
 
-Read only the skill that matches the current request — each is self-contained.
+Read only the workflow that matches the current request. Do not load every workflow in the family.
 
 ## Routing precedence
 

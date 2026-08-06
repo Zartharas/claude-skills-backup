@@ -15,13 +15,13 @@ Recognize these original skill names as explicit aliases: `mem-search`, `how-it-
 
 | Original alias | Read | Use when |
 |---|---|---|
-| `mem-search` | `mem-search/SKILL.md` | User asks about PREVIOUS sessions — "did we already solve this?", "how did we do X last time?" — not the current conversation. |
-| `how-it-works` | `how-it-works/SKILL.md` | User asks what claude-mem is doing or how observation capture/injection works, with no action requested. |
-| `cloud-sync` | `cloud-sync/SKILL.md` | User wants cmem.ai Pro cloud sync set up, checked, or troubleshot. Uses AskUserQuestion — this is an interactive setup flow, not a lookup. |
-| `knowledge-agent` | `knowledge-agent/SKILL.md` | User wants a filtered, conversational "brain" built from observation history on a specific topic, not a one-off search. |
-| `mode-creator` | `mode-creator/SKILL.md` | User wants to change what claude-mem records — new observation types, concept tags, Telegram alerts — even if they never say "mode." Requires a local worker install and Node 20+; see its `compatibility` note. |
+| `mem-search` | `workflows/mem-search.md` | User asks about PREVIOUS sessions — "did we already solve this?", "how did we do X last time?" — not the current conversation. |
+| `how-it-works` | `workflows/how-it-works.md` | User asks what claude-mem is doing or how observation capture/injection works, with no action requested. |
+| `cloud-sync` | `workflows/cloud-sync.md` | User wants cmem.ai Pro cloud sync set up, checked, or troubleshot. Uses AskUserQuestion — this is an interactive setup flow, not a lookup. |
+| `knowledge-agent` | `workflows/knowledge-agent.md` | User wants a filtered, conversational "brain" built from observation history on a specific topic, not a one-off search. |
+| `mode-creator` | `workflows/mode-creator.md` | User wants to change what claude-mem records — new observation types, concept tags, Telegram alerts — even if they never say "mode." Requires a local worker install and Node 20+; see its `compatibility` note. Bundled scripts/references live under `assets/mode-creator/`. |
 
-Read only the skill that matches the current request — each is self-contained with its own scripts/references directory. Do not load every skill in the family.
+Read only the workflow that matches the current request. Do not load every workflow in the family. `how-it-works` and `mode-creator` have supporting files under `assets/<name>/` (scripts, references, evals) — the workflow doc tells you when to read or run them.
 
 ## Routing precedence
 

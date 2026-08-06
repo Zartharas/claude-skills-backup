@@ -15,12 +15,12 @@ Recognize these original skill names as explicit aliases: `babysit`, `oh-my-issu
 
 | Original alias | Read | Use when |
 |---|---|---|
-| `babysit` | `babysit/SKILL.md` | Asked to watch/monitor a specific PR until it's actually mergeable — comments, reviews, and CI all resolved, not just one pass. |
-| `oh-my-issues` | `oh-my-issues/SKILL.md` | An issue tracker has accumulated many reports sharing root causes and needs clustering into plan-master issues + one PR per cluster. |
-| `standup` | `standup/SKILL.md` | Need a read-only comparison across git worktrees, branches, or PRs producing one consolidation plan. Ships its own `standup.mjs` CLI and `agent-brief.md` — read both before running. |
-| `version-bump` | `version-bump/SKILL.md` | Asked to cut a release: version bump across manifests, changelog generation, git tag, GitHub release. Everything must end committed and pushed except npm publish, which is handed to the human. |
+| `babysit` | `workflows/babysit.md` | Asked to watch/monitor a specific PR until it's actually mergeable — comments, reviews, and CI all resolved, not just one pass. |
+| `oh-my-issues` | `workflows/oh-my-issues.md` | An issue tracker has accumulated many reports sharing root causes and needs clustering into plan-master issues + one PR per cluster. |
+| `standup` | `workflows/standup.md` | Need a read-only comparison across git worktrees, branches, or PRs producing one consolidation plan. Ships its own CLI (`assets/standup/standup.mjs`) and `assets/standup/agent-brief.md` — read both before running. |
+| `version-bump` | `workflows/version-bump.md` | Asked to cut a release: version bump across manifests, changelog generation, git tag, GitHub release. Everything must end committed and pushed except npm publish, which is handed to the human. Uses `assets/version-bump/scripts/generate_changelog.js`. |
 
-Read only the skill that matches the current request — each is self-contained with its own scripts.
+Read only the workflow that matches the current request. Do not load every workflow in the family.
 
 ## Routing precedence
 

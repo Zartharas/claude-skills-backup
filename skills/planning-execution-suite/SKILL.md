@@ -15,12 +15,12 @@ Recognize these original skill names as explicit aliases: `make-plan`, `do`, `le
 
 | Original alias | Read | Use when |
 |---|---|---|
-| `learn-codebase` | `learn-codebase/SKILL.md` | Starting cold on a new/unfamiliar project and need deep, full-file understanding before doing anything else. Reads every source file — expensive, use deliberately. |
-| `smart-explore` | `smart-explore/SKILL.md` | Need a structural map of code (functions, symbols, call sites) without full-file reads. Overrides default Read/Grep/Glob behavior in favor of `smart_search`/`smart_outline`/`smart_unfold` while active. |
-| `make-plan` | `make-plan/SKILL.md` | Asked to plan a feature or multi-step implementation. Produces a phased, LLM-friendly plan; orchestrator delegates fact-gathering to subagents but keeps synthesis itself. |
-| `do` | `do/SKILL.md` | Asked to execute, run, or carry out a plan — especially one `make-plan` produced. Orchestrator deploys subagents for all actual work. |
+| `learn-codebase` | `workflows/learn-codebase.md` | Starting cold on a new/unfamiliar project and need deep, full-file understanding before doing anything else. Reads every source file — expensive, use deliberately. |
+| `smart-explore` | `workflows/smart-explore.md` | Need a structural map of code (functions, symbols, call sites) without full-file reads. Overrides default Read/Grep/Glob behavior in favor of `smart_search`/`smart_outline`/`smart_unfold` while active. |
+| `make-plan` | `workflows/make-plan.md` | Asked to plan a feature or multi-step implementation. Produces a phased, LLM-friendly plan; orchestrator delegates fact-gathering to subagents but keeps synthesis itself. |
+| `do` | `workflows/do.md` | Asked to execute, run, or carry out a plan — especially one `make-plan` produced. Orchestrator deploys subagents for all actual work. |
 
-Read only the skill that matches the current request — each is self-contained.
+Read only the workflow that matches the current request. Do not load every workflow in the family.
 
 ## Routing precedence
 
