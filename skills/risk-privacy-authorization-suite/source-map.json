@@ -1,0 +1,45 @@
+{
+  "package": "risk-privacy-authorization-suite",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "conducting-cyber-risk-assessment-with-nist-800-30",
+      "source_skill_md_sha256": "266e64d918b637e01a4905d601712778f3bd5acff13b42c88ac30a8df500f5d9",
+      "source_description": "Use to conduct or structure a defensible cyber-risk assessment using NIST SP 800-30 Rev. 1 concepts: scope, threat sources/events, vulnerabilities, likelihood, impact, uncertainty, risk determination, and treatment. Trigger when evidence and organizational context are available. Do not fabricate ratings, asset values, threat frequencies, or management acceptance.",
+      "workflow_file": "workflows/conducting-cyber-risk-assessment-with-nist-800-30.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "executing-nist-rmf-authorization-to-operate",
+      "source_skill_md_sha256": "fe2eb940446b579bb59b5dc0dfd44bb5874eb6872719b31fa39e70e2e80a7fe0",
+      "source_description": "Use to plan, execute, or audit a NIST RMF authorization-to-operate workflow under SP 800-37 Rev. 2, including categorization, control selection, implementation, assessment, authorization evidence, POA&M, and continuous monitoring. Trigger for federal or RMF-aligned systems. Do not invent authorizing-official decisions, control evidence, inheritance, or compliance status.",
+      "workflow_file": "workflows/executing-nist-rmf-authorization-to-operate.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "performing-nist-csf-maturity-assessment",
+      "source_skill_md_sha256": "f1acc30b2663a9144a18b8d44676121820f443eb703842ab45253ca57b134152",
+      "source_description": "Use to assess Current and Target Profiles against NIST CSF 2.0 outcomes and implementation tiers, with evidence, gaps, priorities, owners, and improvement roadmap. Trigger for organizational cybersecurity maturity or profile work. Do not invent evidence, convert tiers into a certification score, or claim NIST compliance.",
+      "workflow_file": "workflows/performing-nist-csf-maturity-assessment.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "performing-privacy-impact-assessment",
+      "source_skill_md_sha256": "b347f2e657faa502bbb8fbc2b1ca853772f0f3096176d735cdde7531456e0de6",
+      "source_description": "Use to conduct or structure a privacy impact assessment for a defined system or processing change: data flows, purposes, people, legal/policy context, necessity, risks, controls, residual risk, consultation, and approvals. Verify the governing jurisdiction/template. Do not fabricate processing facts or treat a PIA as legal approval.",
+      "workflow_file": "workflows/performing-privacy-impact-assessment.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

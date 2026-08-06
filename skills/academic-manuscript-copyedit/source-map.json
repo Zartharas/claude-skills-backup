@@ -1,0 +1,16 @@
+{
+  "package": "academic-manuscript-copyedit",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "academic-manuscript-copyedit",
+      "source_skill_md_sha256": "6ff71c30076351ee80b87f5e35dafa323e9fb97ad91204b16403495fe86a5065",
+      "source_description": "Use to copyedit or audit an academic or technical manuscript, journal article, dissertation-derived paper, book chapter, reviewer revision, or reference list for natural prose, factual fidelity, citation integrity, venue compliance, and regressions from third-party edits. Preserve honest AI disclosure and protected technical content. Do not evade detection, fabricate sources, or replace the author’s contribution.",
+      "workflow_file": "workflows/academic-manuscript-copyedit.md",
+      "retained_license_files": []
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

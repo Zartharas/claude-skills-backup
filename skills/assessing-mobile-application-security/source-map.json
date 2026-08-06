@@ -1,0 +1,16 @@
+{
+  "package": "assessing-mobile-application-security",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "assessing-mobile-application-security",
+      "source_skill_md_sha256": "c9b2a6e11247c1e197b0cc72bb3dfee1ea71903ec74998828146db29dad76d6a",
+      "source_description": "Use for authorized Android or iOS security assessment planning, evidence review, and lab testing across storage, transport, authentication, platform controls, reverse engineering, and abuse cases. Align to current OWASP MASVS/MASTG profiles. Require explicit scope and test devices; do not target third-party apps or production users without authorization.",
+      "workflow_file": "workflows/assessing-mobile-application-security.md",
+      "retained_license_files": []
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

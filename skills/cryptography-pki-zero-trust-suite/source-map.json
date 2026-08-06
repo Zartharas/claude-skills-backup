@@ -1,0 +1,63 @@
+{
+  "package": "cryptography-pki-zero-trust-suite",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "configuring-certificate-authority-with-openssl",
+      "source_skill_md_sha256": "49d719f86db38d389a02895dbc420284b23ea13de9c0edc49697547d41d48220",
+      "source_description": "Use to design, review, or implement an authorized OpenSSL-based certificate authority, including offline root, issuing CA, profiles, revocation, protection, ceremonies, and recovery. Verify the installed OpenSSL release and configuration syntax at runtime. Never generate or move production private keys without explicit authorization, secure storage, and rollback/recovery planning.",
+      "workflow_file": "workflows/configuring-certificate-authority-with-openssl.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "configuring-hsm-for-key-storage",
+      "source_skill_md_sha256": "df5451e707d4afe2df8ac437abeac08c31a8b31a0f4067ced58290344cc6864a",
+      "source_description": "Use to design or implement authorized HSM-backed key storage through PKCS#11, cloud HSM/KMS interfaces, or vendor tooling. Trigger for key lifecycle, partition/tenant design, access control, backup, quorum, audit, and integration. Require the exact HSM, firmware, API, and authorization; never expose key material or claim hardware-backed protection without evidence.",
+      "workflow_file": "workflows/configuring-hsm-for-key-storage.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-mtls-for-zero-trust-services",
+      "source_skill_md_sha256": "a94971fa83f37f271baf98ae3b13b20226b2a6f0dbe6013f4adcaf5fd0977424",
+      "source_description": "Use to design, configure, or audit mutual TLS for authorized services, including trust domains, certificate profiles, issuance, rotation, revocation, identity mapping, policy enforcement, observability, and failure handling. Verify platform and TLS-library behavior at runtime. Do not deploy trust changes without staged testing and rollback.",
+      "workflow_file": "workflows/implementing-mtls-for-zero-trust-services.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "performing-cryptographic-audit-of-application",
+      "source_skill_md_sha256": "c155ba812caac4e6e58b84092ad93e06e6b4f3d13766c984712eae1fa8e47636",
+      "source_description": "Use to audit an application’s cryptographic design and implementation: algorithms, protocols, modes, randomness, key lifecycle, certificates, storage, dependencies, misuse, and migration. Trigger for authorized code/configuration review. Verify claims against current standards and source evidence; do not invent keys, tests, or vulnerabilities.",
+      "workflow_file": "workflows/performing-cryptographic-audit-of-application.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "performing-post-quantum-cryptography-migration",
+      "source_skill_md_sha256": "1a187632e2bb1b111fbbb9609a8d6b127298df0573b237cd3f5448c98671d2b2",
+      "source_description": "Use to inventory cryptographic dependencies and plan a risk-based post-quantum migration using current NIST standards and transition guidance. Trigger for crypto agility, harvest-now-decrypt-later exposure, hybrid testing, vendor readiness, and roadmaps. Distinguish final standards from drafts/selections and do not claim product support without testing.",
+      "workflow_file": "workflows/performing-post-quantum-cryptography-migration.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "performing-ssl-certificate-lifecycle-management",
+      "source_skill_md_sha256": "19f75d485430808f9f72e479c5413a8a603445343c7047a995a9fb350883bb07",
+      "source_description": "Use to manage or audit TLS/X.509 certificate discovery, issuance, deployment, monitoring, rotation, revocation, renewal, inventory, and incident response. Verify current platform, CA, protocol, and client requirements. Do not replace production certificates or private keys without authorization, staged validation, and rollback.",
+      "workflow_file": "workflows/performing-ssl-certificate-lifecycle-management.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

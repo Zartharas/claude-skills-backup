@@ -1,0 +1,64 @@
+{
+  "package": "secure-software-delivery-supply-chain",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "analyzing-sbom-for-supply-chain-vulnerabilities",
+      "source_skill_md_sha256": "f83a566594c9c911b8112f51e0314ebc6a0b20e941e762ec5ec766a8424f3bb9",
+      "source_description": "Use to analyze CycloneDX or SPDX SBOMs for vulnerabilities, unsupported components, licensing concerns, provenance gaps, and policy violations. Trigger for SBOM ingestion, component-risk prioritization, VEX-aware review, or supply-chain reporting. Preserve format/version compatibility, verify current vulnerability data, and do not treat a scanner match as proof of exploitability.",
+      "workflow_file": "workflows/analyzing-sbom-for-supply-chain-vulnerabilities.md",
+      "retained_license_files": []
+    },
+    {
+      "alias": "implementing-secret-scanning-with-gitleaks",
+      "source_skill_md_sha256": "f2bde2d38c3516a043e2de1eac4d8ab687cd77112c400994bdf84cc424455020",
+      "source_description": "Use to implement, tune, or audit Gitleaks for repositories, history, pre-commit, CI, baselines, allowlists, remediation, and evidence. Trigger for authorized secret detection. Treat findings as sensitive, avoid printing full secrets, and require rotation when exposure is credible. Verify the installed Gitleaks version and rule behavior before enforcement.",
+      "workflow_file": "workflows/implementing-secret-scanning-with-gitleaks.md",
+      "retained_license_files": []
+    },
+    {
+      "alias": "performing-container-security-scanning-with-trivy",
+      "source_skill_md_sha256": "ba3433634cb9036acfeaa9074310f03b3223580b8bc3f1fdae7f4004ccad348e",
+      "source_description": "Use to scan or review authorized container images, filesystems, repositories, SBOMs, and infrastructure configuration with Trivy for vulnerabilities, secrets, licenses, and misconfiguration. Verify installed version, databases, VEX, and output format. Treat matches as triage leads and never expose secrets in reports.",
+      "workflow_file": "workflows/performing-container-security-scanning-with-trivy.md",
+      "retained_license_files": []
+    },
+    {
+      "alias": "securing-github-actions-workflows",
+      "source_skill_md_sha256": "71bb58b039f50c98b8dde104c636ed6cb2e79ba83bda61c8b86424cf6e12f380",
+      "source_description": "Use to audit or harden GitHub Actions workflows against untrusted input, token abuse, unsafe triggers, dependency compromise, cache/artifact poisoning, self-hosted runner risk, and excessive permissions. A connected GitHub app or repository files are required for live changes. Pin third-party actions to verified full commit SHAs and preserve required functionality.",
+      "workflow_file": "workflows/securing-github-actions-workflows.md",
+      "retained_license_files": []
+    },
+    {
+      "alias": "implementing-code-signing-for-artifacts",
+      "source_skill_md_sha256": "b9441f83b64182341100120b0a8f2600ecbf43c39803bcd967d9ba077afdf2cd",
+      "source_description": "Use to design, implement, or audit artifact code signing with platform, PKI, or keyless mechanisms: key protection, identity, signing, verification, timestamping, policy, CI integration, revocation, and evidence. Trigger for build or release integrity. Never embed private keys or claim provenance from a signature alone.",
+      "workflow_file": "workflows/implementing-code-signing-for-artifacts.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-sigstore-for-software-signing",
+      "source_skill_md_sha256": "106d89e2fe453c3d3822c373ce617a490a53015513adad7714fba231bffad384",
+      "source_description": "Use to implement or audit Sigstore/Cosign signing and verification, including keyless identity, Fulcio, Rekor, TUF roots, attestations, policies, offline cases, and CI. Trigger for software-supply-chain provenance. Verify identities and trust roots; do not equate transparency-log inclusion with artifact safety.",
+      "workflow_file": "workflows/implementing-sigstore-for-software-signing.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-policy-as-code-with-open-policy-agent",
+      "source_skill_md_sha256": "5c8e34f043a60f336431bb9d30eb4407ad9c2c58c9ba71f14f10ac81b1087b0b",
+      "source_description": "Use to design, implement, test, or audit policy-as-code with Open Policy Agent, Rego, Gatekeeper, bundles, decision logs, and signed distribution. Trigger for authorization or compliance policy enforcement. Verify OPA/Gatekeeper versions and schemas; never promote an untested deny policy or log sensitive input without review.",
+      "workflow_file": "workflows/implementing-policy-as-code-with-open-policy-agent.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

@@ -1,0 +1,54 @@
+{
+  "package": "compliance-controls-suite",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "implementing-gdpr-data-protection-controls",
+      "source_skill_md_sha256": "ba07caa56efff8b2a1227abf6c661ad4ac132a8fa9dc768f3347bfc7507d7728",
+      "source_description": "Use to map and implement GDPR technical and organizational controls for a defined processing activity: lawful basis, minimization, rights, security, processors, transfers, retention, breach response, records, and DPIA linkage. Verify current official guidance and jurisdictional context. Do not claim legal compliance or choose a lawful basis without controller input and evidence.",
+      "workflow_file": "workflows/implementing-gdpr-data-protection-controls.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-hipaa-security-rule-safeguards",
+      "source_skill_md_sha256": "5db759e913bab874d149cda4563705dd4b9a2fa32e6969e74189a7cb6209833a",
+      "source_description": "Use to assess or implement HIPAA Security Rule administrative, physical, and technical safeguards for a defined covered entity or business associate. Distinguish the current rule from proposed changes and verify current HHS guidance. Do not make legal determinations, invent risk-analysis evidence, or claim compliance from a checklist.",
+      "workflow_file": "workflows/implementing-hipaa-security-rule-safeguards.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-iso-27001-information-security-management",
+      "source_skill_md_sha256": "07126a51e78235f451efb5993d6206e57392e6c0e6419d3520a188c29ccd0b7a",
+      "source_description": "Use to establish, operate, audit, or improve an ISO/IEC 27001:2022 ISMS: context, leadership, risk treatment, Statement of Applicability, controls, evidence, internal audit, management review, and improvement. Trigger for implementation or certification preparation. Do not claim certification or conformity without audit evidence and certification-body action.",
+      "workflow_file": "workflows/implementing-iso-27001-information-security-management.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-pci-dss-compliance-controls",
+      "source_skill_md_sha256": "3d6081612adcef05b1bc62b0afb68cf2f3644ad7a557aab4db6dc2d4f863a2b4",
+      "source_description": "Use to implement or assess PCI DSS v4.0.1 controls for a defined cardholder-data environment, including scope, segmentation, customized approach, evidence, testing, and responsibility. Verify current PCI SSC publications and effective dates. Do not claim compliance, reduce scope without evidence, or replace a QSA/ISA judgment.",
+      "workflow_file": "workflows/implementing-pci-dss-compliance-controls.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "performing-soc2-type2-audit-preparation",
+      "source_skill_md_sha256": "f75219fc6ba9e583afe62dbabd69726e4ae8c9ca948bec07c8ee08d14e19b9b9",
+      "source_description": "Use to prepare for a SOC 2 Type II examination: scope, Trust Services Criteria, system description, control design, operating evidence, exceptions, vendors, readiness testing, and remediation. Trigger for readiness, not attestation. Do not claim SOC 2 compliance or auditor conclusions, and preserve evidence periods and ownership.",
+      "workflow_file": "workflows/performing-soc2-type2-audit-preparation.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

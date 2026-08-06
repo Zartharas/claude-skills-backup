@@ -1,0 +1,16 @@
+{
+  "package": "ponytail",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "ponytail",
+      "source_skill_md_sha256": "480893ff735828e593defdf5f288919247827e6c54acc017fea5ff991e90924e",
+      "source_description": "Use when the user explicitly requests Ponytail, YAGNI, the simplest working coding solution, a minimal dependency footprint, or the smallest safe diff. Prefer reuse, standard libraries, native features, deletion, and one focused validation. Do not activate for every coding task, and never simplify away security, correctness, accessibility, data protection, tests required by risk, or explicit requirements.",
+      "workflow_file": "workflows/ponytail.md",
+      "retained_license_files": []
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

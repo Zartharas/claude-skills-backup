@@ -1,0 +1,16 @@
+{
+  "package": "model-efficiency-router",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "model-efficiency-router",
+      "source_skill_md_sha256": "784bf00d4d6b262def931ce32ae1cf4ceb257d5c8019c717ef772992e620a8b4",
+      "source_description": "Use at a task boundary when the user asks to conserve model usage or choose an appropriate reasoning effort for the next phase. Classify task complexity, risk, ambiguity, and verification burden, then recommend a host-available model/effort only when useful. Do not claim to change the active model, raise native intelligence, monitor in the background, or rely on unavailable model names.",
+      "workflow_file": "workflows/model-efficiency-router.md",
+      "retained_license_files": []
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

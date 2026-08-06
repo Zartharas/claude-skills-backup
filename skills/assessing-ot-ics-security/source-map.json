@@ -1,0 +1,16 @@
+{
+  "package": "assessing-ot-ics-security",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "assessing-ot-ics-security",
+      "source_skill_md_sha256": "a56ffc20b3c6c8b593a89fefd0627731da15a44e838b1fa7c0273aa38cf92da2",
+      "source_description": "Use for authorized OT/ICS security assessment with safety-first, passive-by-default methods: architecture, segmentation, asset exposure, protocols, remote access, monitoring, and recovery. Trigger for industrial environments where availability and physical safety matter. Do not actively scan, exploit, change logic, or disrupt operations without written approval and an operational safety plan.",
+      "workflow_file": "workflows/assessing-ot-ics-security.md",
+      "retained_license_files": []
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

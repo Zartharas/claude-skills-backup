@@ -1,0 +1,36 @@
+{
+  "package": "incident-response-crisis-communications",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "building-incident-response-playbook",
+      "source_skill_md_sha256": "88678beee7b9edac7c5a37a59b55af2cfca428ebcf05ee56b7603d47e7276982",
+      "source_description": "Use to design or revise an organization-specific incident-response playbook with triggers, severity, roles, evidence handling, containment choices, communications, recovery, metrics, and exercises. Align current NIST SP 800-61 Rev. 3 with CSF 2.0 where applicable. Do not invent organizational authority, contacts, approvals, or system capabilities.",
+      "workflow_file": "workflows/building-incident-response-playbook.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "building-malware-incident-communication-template",
+      "source_skill_md_sha256": "8c9cd50193e0a073de33a2f942a6d6ccc527057947e0dded2e059030a5ee95d3",
+      "source_description": "Use to create evidence-aware malware-incident communications for executives, technical teams, legal/privacy, customers, regulators, or vendors. Trigger when the user needs initial, update, containment, recovery, or closure templates. Preserve uncertainty and avoid declaring attribution, breach, eradication, or impact before evidence supports it.",
+      "workflow_file": "workflows/building-malware-incident-communication-template.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "performing-cloud-incident-containment-procedures",
+      "source_skill_md_sha256": "483afa4c5d24bed2dafdbd6733114220a85ea3279c48c46e57cb75ca3f2647e4",
+      "source_description": "Use to plan, approve, or execute containment in an authorized AWS, Azure, or GCP incident: identity, keys, network, workloads, data, logging, evidence, communications, and recovery. Live actions require connected cloud APIs and explicit account/resource scope. Prefer reversible controls, preserve evidence, and define stop/rollback conditions.",
+      "workflow_file": "workflows/performing-cloud-incident-containment-procedures.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

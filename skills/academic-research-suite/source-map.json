@@ -1,0 +1,21 @@
+{
+  "package": "academic-research-suite",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "academic-research-suite",
+      "source_skill_md_sha256": "d050604f6aa8ae177655b98edbffee61986c76af1ac6ad3312b469b6f1122c35",
+      "source_description": "Use for end-to-end scholarly research and publishing: research-question refinement, literature or systematic reviews, evidence synthesis, study planning, manuscript development, peer review, venue selection, submissions, rebuttals, proofs, and corrections. Trigger when the user is conducting or publishing research. Route copyediting-only work to academic-manuscript-copyedit. Never fabricate sources, methods, approvals, data, or findings.",
+      "workflow_file": "workflows/academic-research-suite.md",
+      "retained_license_files": [
+        "licenses/academic-suite-notice.md",
+        "licenses/academic-suite-third-party.md",
+        "licenses/cc-by-nc-4.0.txt",
+        "licenses/experiment-agent-cc-by-nc-4.0.txt"
+      ]
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

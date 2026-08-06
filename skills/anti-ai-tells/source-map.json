@@ -1,0 +1,19 @@
+{
+  "package": "anti-ai-tells",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "anti-ai-tells",
+      "source_skill_md_sha256": "13b117aa66db4347dcf50a600a0149b3b05c3ccffe3ddd8067db3b212e96eb13",
+      "source_description": "Use to rewrite or audit non-academic prose that is generic, formulaic, repetitive, or overly polished while preserving facts, voice, scope, and high-stakes qualifiers. Trigger for professional messages, reports, resumes, tickets, explanations, and complete drafts. Route scholarly manuscripts to academic-manuscript-copyedit. Do not evade disclosure, disguise plagiarism, fabricate content, or promise detector outcomes.",
+      "workflow_file": "workflows/anti-ai-tells.md",
+      "retained_license_files": [
+        "licenses/anti-ai-tells-notice.md",
+        "licenses/mit-anti-ai-tells.txt"
+      ]
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

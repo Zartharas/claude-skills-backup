@@ -1,0 +1,16 @@
+{
+  "package": "skill-pack-quality-auditor",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "skill-pack-quality-auditor",
+      "source_skill_md_sha256": "daa245cb2e019e030a4f6d9b7ac0a1920a95c179398a14ae4e1e443a534bca8e",
+      "source_description": "Use to inspect, improve, convert, or validate ChatGPT, Codex, or Agent Skills folders and archives. Trigger when actual SKILL.md files or packages are supplied and the user wants compatibility classification, trigger refinement, progressive disclosure, safety review, code scanning, regression tests, or installable packages. Do not recreate third-party skills from names alone or claim unavailable tools or installation.",
+      "workflow_file": "workflows/skill-pack-quality-auditor.md",
+      "retained_license_files": []
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

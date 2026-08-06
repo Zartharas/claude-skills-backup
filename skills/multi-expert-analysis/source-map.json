@@ -1,0 +1,16 @@
+{
+  "package": "multi-expert-analysis",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "multi-expert-analysis",
+      "source_skill_md_sha256": "fe1c6c104dd72db32ac2f86444fb7496d01f32aad4fe5091c775eafe269f01c3",
+      "source_description": "Use for complex, consequential, cross-domain decisions that need several relevant expert lenses, evidence reconciliation, adversarial challenge, and an actionable recommendation. Trigger for cybersecurity, architecture, incident response, GRC, research design, legal-risk, or operational decisions with competing constraints. Do not activate for simple questions or simulate a theatrical panel.",
+      "workflow_file": "workflows/multi-expert-analysis.md",
+      "retained_license_files": []
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

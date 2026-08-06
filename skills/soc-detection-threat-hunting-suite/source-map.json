@@ -1,0 +1,50 @@
+{
+  "package": "soc-detection-threat-hunting-suite",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "analyzing-logs-and-siem-data",
+      "source_skill_md_sha256": "2b474f71d0cdb7e6ce7533e8144fd6d9330130f8a8156dc8ce13285973a8afc0",
+      "source_description": "Use to investigate authorized security events from supplied logs, SIEM exports, or a genuinely connected SIEM: normalize fields, reconstruct timelines, correlate activity, write or review defensive queries, and distinguish observed evidence from inference. Do not claim live access, execute searches, or widen scope unless the current host exposes the system and the user authorizes it.",
+      "workflow_file": "workflows/analyzing-logs-and-siem-data.md",
+      "retained_license_files": []
+    },
+    {
+      "alias": "network-security-analysis",
+      "source_skill_md_sha256": "f656c6bd7b2f6f2be0d7f8617311796c9ffc1c9eb0331cda4914980b8fde71b0",
+      "source_description": "Use to assess authorized network architecture, packet captures, flow/log data, protocols, segmentation, exposure, firewall policy, and defensive controls. Trigger for evidence-based network investigation or design review. Require scope before scanning or active tests, preserve captures as evidence, and do not infer compromise from one indicator.",
+      "workflow_file": "workflows/network-security-analysis.md",
+      "retained_license_files": []
+    },
+    {
+      "alias": "building-threat-hunt-hypothesis-framework",
+      "source_skill_md_sha256": "541941ac7cffa27245c9546da7ed4dd1ba72cd2db6873a366a05e483db4ea4f0",
+      "source_description": "Use to turn threat intelligence, anomalies, or defensive gaps into testable threat-hunt hypotheses with scope, data requirements, expected evidence, queries, decision criteria, and follow-up actions. Trigger for authorized defensive hunting. Do not present hypotheses as findings or expand into active exploitation.",
+      "workflow_file": "workflows/building-threat-hunt-hypothesis-framework.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-soar-playbook-with-palo-alto-xsoar",
+      "source_skill_md_sha256": "cd0bd841e08ed15538e36947189bcceee1fe6f010cfbd9de193db1449ce0e3b8",
+      "source_description": "Use to design, review, or implement Cortex XSOAR playbooks for authorized incident workflows, integrations, inputs, approvals, error paths, evidence, and rollback. Live execution requires a connected XSOAR tenant/API and verified integration commands. Do not enable destructive automation or close incidents without explicit approval gates.",
+      "workflow_file": "workflows/implementing-soar-playbook-with-palo-alto-xsoar.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "performing-user-behavior-analytics",
+      "source_skill_md_sha256": "3f125f7891fe6170fd17e9fe1e3ced2eb688c02434effe9d06d5c2d9812f42eb",
+      "source_description": "Use to design, review, or implement UEBA for authorized identity and activity data: baselines, features, peer groups, scoring, privacy, tuning, investigations, and validation. Live analytics require a connected SIEM/UEBA platform or supplied data. Do not label a person malicious from anomaly scores alone.",
+      "workflow_file": "workflows/performing-user-behavior-analytics.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

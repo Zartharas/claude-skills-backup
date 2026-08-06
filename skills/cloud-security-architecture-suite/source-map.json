@@ -1,0 +1,45 @@
+{
+  "package": "cloud-security-architecture-suite",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "implementing-aws-config-rules-for-compliance",
+      "source_skill_md_sha256": "4adb7933d8ac8ac31413bc2b42e1a2621bbf5d5857cb0772f3b28c4370bd3b06",
+      "source_description": "Use to design, review, test, or deploy AWS Config managed/custom rules and conformance packs for an authorized AWS environment. Trigger for compliance mappings, remediation, organization-wide rollout, and evidence. Requires AWS credentials or a connected AWS tool for execution; otherwise produce reviewable artifacts only. Never deploy or remediate without account/region scope and approval.",
+      "workflow_file": "workflows/implementing-aws-config-rules-for-compliance.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-aws-nitro-enclave-security",
+      "source_skill_md_sha256": "0bf6c52c864885ee4d6df882d81270e53997f697efebe602818c820fae3145de",
+      "source_description": "Use to design or implement AWS Nitro Enclaves for authorized confidential-computing workloads, including attestation, KMS policy, parent/enclave boundaries, networking, image measurement, and operations. Requires an AWS environment and current AWS documentation for execution. Do not claim enclave isolation or attestation success without measured evidence.",
+      "workflow_file": "workflows/implementing-aws-nitro-enclave-security.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-cloud-security-posture-management",
+      "source_skill_md_sha256": "f1624e356cc4d0d318fa53d763ef5849e6beaff0f8ddd738f872f554c0c8b6fa",
+      "source_description": "Use to design or operate CSPM across authorized AWS, Azure, or GCP estates: inventory, misconfiguration policy, prioritization, exceptions, remediation, evidence, and governance. Live execution requires the relevant cloud APIs or CSPM app. Do not treat benchmark alignment as certification or apply remediation without scope, owner, and rollback.",
+      "workflow_file": "workflows/implementing-cloud-security-posture-management.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    },
+    {
+      "alias": "implementing-cloud-workload-protection",
+      "source_skill_md_sha256": "dc465dc0f9e8457c0b13b9113e2ed34d3aeafd26d904e403db1c70907d3769cb",
+      "source_description": "Use to design or implement cloud-workload protection for authorized compute, container, serverless, and Kubernetes workloads, including runtime telemetry, hardening, identity, network controls, detection, and response. Live changes require the relevant cloud/platform APIs. Preserve availability, privacy, and rollback requirements.",
+      "workflow_file": "workflows/implementing-cloud-workload-protection.md",
+      "retained_license_files": [
+        "licenses/apache-2.0.txt"
+      ]
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}

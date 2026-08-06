@@ -1,0 +1,16 @@
+{
+  "package": "caveman",
+  "built_at": "2026-07-29",
+  "source_archive": "chatgpt-codex-skills-updated-20260728.zip",
+  "source_archive_sha256": "abc8663d228518e29e6da32780f82c0ed10693e8234e96be62744c2e62380eac",
+  "source_workflows": [
+    {
+      "alias": "caveman",
+      "source_skill_md_sha256": "5f5d855e85b4f9b161a46ff1a5d710b916df4b04be80cf4730bcfb6de39216cf",
+      "source_description": "Use only when the user explicitly requests Caveman mode, extreme terseness, token-minimized prose, or a named Caveman intensity. Compress wording while preserving technical accuracy, exact literals, warnings, ordered steps, and required detail. Do not activate from an ordinary request to be concise, and suspend compression whenever ambiguity or safety risk would increase.",
+      "workflow_file": "workflows/caveman.md",
+      "retained_license_files": []
+    }
+  ],
+  "transformation": "Instruction-only ChatGPT Web condensation. Original Codex scripts, binaries, source snapshots, test fixtures, and local-only execution artifacts are not included."
+}
