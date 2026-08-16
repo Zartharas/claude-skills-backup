@@ -11,6 +11,17 @@ Use for defensive software supply-chain work involving SBOM and VEX analysis, se
 
 This is a ChatGPT Web instruction package. It is intentionally separated from the full Codex catalog: scripts, binaries, local hooks, source snapshots, and platform-specific executables are not bundled here.
 
+## Upgrade note (added after original build)
+
+`workflows/detecting-and-defending-against-slopsquatting.md` was added to deepen the
+original package's slopsquatting coverage with current (2026) research: the 43%
+prompt-repeatability finding, 8.7% cross-registry confusion, confirmed real-world incidents,
+and — critically — the CI/CD permission-scoping pattern from the Clinejection incident
+(Feb 2026), where an AI coding agent's GitHub Actions integration was configured with a
+wildcard trigger permission and overly broad tool access. Route slopsquatting-specific
+questions to that workflow rather than the general SBOM workflow, which covers known
+vulnerabilities in real packages, not fabricated ones.
+
 ## Source aliases
 
 Recognize these original workflow names as explicit aliases: `analyzing-sbom-for-supply-chain-vulnerabilities`, `implementing-secret-scanning-with-gitleaks`, `performing-container-security-scanning-with-trivy`, `securing-github-actions-workflows`, `implementing-code-signing-for-artifacts`, `implementing-sigstore-for-software-signing`, `implementing-policy-as-code-with-open-policy-agent`.
