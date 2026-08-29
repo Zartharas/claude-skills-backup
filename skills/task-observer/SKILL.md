@@ -148,21 +148,34 @@ an open-source skill (unless an internal skill is the right home).
 Append to the log **silently, within the same turn or the next** — never
 batch mentally for later; the act of writing is the enforcement mechanism.
 
-**Mandatory observation checkpoint after every 3rd TodoWrite completion:** After
-marking the 3rd, 6th, 9th (etc.) TodoWrite item as completed in a session, you
-must **write to the log** — not merely pause to ask yourself a question. Either
-append any pending observations, or, if genuinely none have accumulated, append
-an explicit acknowledgement marker (a one-line `no observations` note for that
-checkpoint). The required action is a concrete log write; a remembered "ask
-whether" is not enforcement. This is a hard checkpoint, not a suggestion — the
-skill has demonstrated that softer "check when completing items" or "pause and
-ask" guidance gets lost during cognitively demanding analytical work, exactly
-when the most observations accumulate. The count doesn't need to be precise;
-the rule is: roughly every third completion, write to the log (observations or
-the acknowledgement marker). The write itself is the enforcement mechanism: it
-forces the mental check to surface as a recorded action, and it prevents the
-common failure mode where the skill is loaded but no observations are written
-until the user explicitly asks.
+**Mandatory observation checkpoint after every 3rd tracked-task completion:**
+Use whichever task-tracking primitive is actually active this session —
+TodoWrite where enabled, or TaskCreate/TaskUpdate/TaskList/TaskGet on harnesses
+where TodoWrite is disabled (TodoWrite is off by default on current
+Claude Code models as of v2.1.233; check which primitive responds before
+relying on either). After marking the 3rd, 6th, 9th (etc.) item completed via
+that primitive in a session, you must **write to the log** — not merely pause
+to ask yourself a question. Either append any pending observations, or, if
+genuinely none have accumulated, append an explicit acknowledgement marker (a
+one-line `no observations` note for that checkpoint). The required action is a
+concrete log write; a remembered "ask whether" is not enforcement. This is a
+hard checkpoint, not a suggestion — the skill has demonstrated that softer
+"check when completing items" or "pause and ask" guidance gets lost during
+cognitively demanding analytical work, exactly when the most observations
+accumulate. The count doesn't need to be precise; the rule is: roughly every
+third completion, write to the log (observations or the acknowledgement
+marker). The write itself is the enforcement mechanism: it forces the mental
+check to surface as a recorded action, and it prevents the common failure mode
+where the skill is loaded but no observations are written until the user
+explicitly asks.
+
+**Fallback checkpoint when no task-tracking tool is available or enabled:** If
+neither TodoWrite nor TaskCreate/TaskUpdate/TaskList/TaskGet is active this
+session, don't skip the checkpoint — tie it to something that always fires
+instead: roughly every 8–10 tool calls, or every 15–20 minutes / a few
+substantive turns of elapsed session time, whichever comes first. Same
+requirement as above: write pending observations or the `no observations`
+marker at that point, don't just mentally note it.
 
 **Deliverable-event flush:** Hard enforcement that hooks onto tool calls you are
 already making is the only reliable mechanism; soft prompts that rely on memory
@@ -170,8 +183,9 @@ don't survive cognitive load during long substantive sessions (when the most
 insights surface). So tie observation-flushing to deliverable and workflow events
 that already involve a tool call. Whenever you present or render a major
 deliverable — `present_files`, a deck or PDF render, a staged skill file handed
-to the user — or complete a task/todo batch, flush any pending observations to
-the log at that moment, before moving on. These are natural, already-occurring
+to the user — or complete a batch of tracked tasks (via TodoWrite or
+TaskCreate/TaskUpdate/TaskList/TaskGet, whichever is active), flush any
+pending observations to the log at that moment, before moving on. These are natural, already-occurring
 checkpoints; piggy-backing the flush onto them means the write happens as a
 side effect of work you were doing anyway, rather than depending on a separate
 act of memory.

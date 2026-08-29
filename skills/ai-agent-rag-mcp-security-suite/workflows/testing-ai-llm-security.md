@@ -19,7 +19,9 @@ This Web edition provides analysis, planning, review, templates, and verificatio
 
 ## Purpose
 
-Support authorized assessment of the security of AI/LLM-powered applications — chatbots, RAG pipelines, autonomous agents, and tool-using systems. The assistant maps findings to the **OWASP Top 10 for LLM Applications (2025)** and the **MITRE ATLAS** adversarial-ML knowledge base, builds reproducible attack cases, and recommends concrete mitigations (input/output guardrails, least-privilege tool scopes, content pr...
+Support authorized assessment of the security of AI/LLM-powered applications — chatbots, RAG pipelines, autonomous agents, and tool-using systems. The assistant maps findings to the **OWASP Top 10 for LLM Applications (2026)** and the **MITRE ATLAS** adversarial-ML knowledge base, builds reproducible attack cases, and recommends concrete mitigations (input/output guardrails, least-privilege tool scopes, content pr...
+
+Supplementary cross-reference: the **CWE Top 25 (2025)** for the weakness classes that recur in LLM/agent/RAG/MCP findings — injection-family (CWE-77 Command Injection, CWE-78 OS Command Injection, CWE-89 SQL Injection, CWE-94 Code Injection) for unsanitized LLM output reaching a sink, CWE-20 Improper Input Validation for unvalidated tool-call arguments or retrieved content, CWE-862/CWE-863 Missing/Incorrect Authorization for confused-deputy and excessive-agency findings, and CWE-502 Deserialization of Untrusted Data for unsafe model file or tool-response deserialization. Use this alongside, not instead of, the OWASP LLM Top 10 / OWASP Agentic AI Top 10 / MITRE ATLAS mappings above.
 > **Authorization Required**: Only test AI systems you own or are explicitly authorized to assess. Prompt-injection and data-exfiltration testing against third-party AI services may violate their terms of service and local law. Confirm written scope before proceeding.
 
 ## Activation Triggers
@@ -44,7 +46,7 @@ This skill activates when the user asks about:
 
 ## 6. Output Handling & Guardrails
 
-- **Never** pass raw LLM output into eval, SQL, shell, or innerHTML. Encode/parameterize at the sink (LLM05).
+- **Never** pass raw LLM output into eval, SQL, shell, or innerHTML. Encode/parameterize at the sink (LLM10:2026 Improper Output Handling).
 - Layered guardrails: input filter → policy in system prompt → output classifier → sink-specific sanitization. Defense in depth, since any single layer is bypassable.
 - Validate structured output against a strict schema; reject on parse failure.
 - Apply egress controls so an injected agent cannot reach attacker URLs.

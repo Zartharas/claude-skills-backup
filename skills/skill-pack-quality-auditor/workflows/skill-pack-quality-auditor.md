@@ -2,11 +2,11 @@
 
 ## When this workflow applies
 
-Use to inspect, improve, convert, or validate ChatGPT, Codex, or Agent Skills folders and archives. Trigger when actual SKILL.md files or packages are supplied and the user wants compatibility classification, trigger refinement, progressive disclosure, safety review, code scanning, regression tests, or installable packages. Do not recreate third-party skills from names alone or claim unavailable tools or installation.
+Use to inspect, improve, convert, or validate skill folders and archives — regardless of which origin ecosystem (ChatGPT, Codex, Claude Code) they came from, since the format has consolidated around the open agentskills.io Agent Skills specification rather than remaining three separate incompatible formats. Trigger when actual SKILL.md files or packages are supplied and the user wants compatibility classification, trigger refinement, progressive disclosure, safety review, code scanning, regression tests, or installable packages. Do not recreate third-party skills from names alone or claim unavailable tools or installation.
 
-## Web execution boundary
+## Execution boundary
 
-This Web edition provides analysis, planning, review, templates, and verification guidance. It does not imply that a scanner, cloud account, repository, endpoint, HSM, SIEM, SOAR, or other external system is connected. Begin read-only. Require explicit authorization, confirmed scope, available tools, and rollback conditions before any live action.
+This workflow provides analysis, planning, review, templates, and verification guidance. It does not imply that a scanner, cloud account, repository, endpoint, HSM, SIEM, SOAR, or other external system is connected. Begin read-only. Require explicit authorization, confirmed scope, available tools, and rollback conditions before any live action.
 
 ## Goal
 
@@ -47,7 +47,7 @@ When several skills belong to one family:
 ## Validation
 
 Perform:
-1. Structural validation
+1. Structural validation against the agentskills.io open Agent Skills specification (the cross-tool compatibility bar), not only Claude Code's own SKILL.md conventions
 2. Trigger tests
 3. Positive workflow tests
 4. Negative and boundary tests
@@ -76,4 +76,4 @@ For each skill, provide:
 - Provide validation steps, unresolved issues, residual risk, and the next authorization gate.
 - Never claim execution, access, containment, compliance, certification, or verification that was not observed.
 
-_Source workflow alias: skill-pack-quality-auditor. Condensed from the validated Codex source for the ChatGPT Web edition; executable examples and local-only artifacts were intentionally omitted._
+_Source workflow alias: skill-pack-quality-auditor. Condensed from the validated Codex source; executable examples and local-only artifacts were intentionally omitted._

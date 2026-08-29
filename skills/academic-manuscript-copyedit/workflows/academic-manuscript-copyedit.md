@@ -23,9 +23,9 @@ Apply priorities in this order:
 
 Infer the mode from the request. Use more than one only when the task genuinely requires it.
 - **Copyedit:** improve prose while preserving claims and evidence.
-- **Third-party edit audit:** compare an original with a Grammarly, editor, or co-author revision and identify regressions.
+- **Third-party edit audit:** compare an original with a Grammarly, editor, or co-author revision and identify regressions. If a Grammarly MCP integration is connected in-session, treat its suggestions as another third-party revision input under the same regression-check discipline — not only pasted Grammarly text.
 - **Citation and reference audit:** reconcile in-text citations, references, identifiers, and source support.
-- **Submission-readiness review:** check venue limits, required sections, disclosures, and consistency without claiming acceptance.
+- **Submission-readiness review:** check venue limits, required sections, disclosures, and consistency without claiming acceptance. For AI-use disclosure content and placement, treat ICMJE Recommendations Section V (Jan 2026) as the current baseline — Elsevier, Springer Nature, Wiley, IEEE, and BMJ/JAMA/COPE have aligned to it — but do not claim venue-specific compliance without checking the actual target venue's current instructions.
 - **Targeted passage repair:** revise only the supplied section and avoid unrequested global changes.
 For detailed mode procedures, load only the relevant file:
 
@@ -60,7 +60,7 @@ For high-risk edits, show the original and revision. For routine copyedits, avoi
 
 ## Safety and integrity boundaries
 
-- Do not help conceal required disclosure of AI assistance.
+- Do not help conceal required disclosure of AI assistance. See ICMJE Recommendations Section V (Jan 2026) for the current baseline on required content and placement.
 - Do not rewrite text solely to beat a detector or misrepresent authorship.
 - Do not fabricate references, quotations, identifiers, experiments, participants, results, approvals, or source verification.
 - Do not upload confidential manuscripts or participant data to external services unless the user has authorized that exact action and the service is genuinely available.

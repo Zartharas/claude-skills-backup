@@ -26,7 +26,7 @@ This Web edition provides analysis, planning, review, templates, and verificatio
 
 ## Workflow
 
-1. **Formulate Hypothesis**: Define a testable hypothesis based on threat intelligence or ATT&CK gap analysis.
+1. **Formulate Hypothesis**: Define a testable hypothesis based on threat intelligence or ATT&CK gap analysis. Note: ATT&CK v19 (April 28, 2026) split Defense Evasion into Stealth (TA0005) and Defense Impairment (TA0112) and added ICS sub-techniques — map gap analysis against the new tactic split, not the retired single Defense Evasion tactic. (https://attack.mitre.org/resources/updates/updates-april-2026/)
 2. **Identify Data Sources**: Determine which logs and telemetry are needed to validate or refute the hypothesis.
 3. **Execute Queries**: Run detection queries against SIEM and EDR platforms to collect relevant events.
 4. **Analyze Results**: Examine query results for anomalies, correlating across multiple data sources.

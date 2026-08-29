@@ -25,7 +25,7 @@ Set up the Config recorder and delivery channel in each target account.
 
 ## Step 2: Deploy Managed Config Rules for CIS Compliance
 
-Enable AWS-managed Config rules that map to CIS AWS Foundations Benchmark controls.
+Enable AWS-managed Config rules that map to CIS AWS Foundations Benchmark controls. AWS significantly expanded the managed-rule catalog in July 2026 (191 new rules covering Bedrock, SageMaker, ECS, EKS, RDS, Redshift, S3, and CloudTrail) — re-check catalog coverage for the target services before writing custom rules to fill gaps. AWS Config also added internal service-linked rules (June 2026), which some AWS services deploy and manage on your behalf; account for these when reconciling rule inventories.
 
 ## Step 3: Create Custom Config Rules with Lambda
 

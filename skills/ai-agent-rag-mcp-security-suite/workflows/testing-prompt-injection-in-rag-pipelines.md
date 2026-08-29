@@ -46,7 +46,7 @@ Beyond text-level injection, RAG pipelines are vulnerable at the *embedding* lay
 - [ ] Embedding-poisoning PoC shows high cosine similarity and retrieval of the planted chunk
 - [ ] At least one successful injection demonstrated end-to-end (or absence verified) with evidence
 - [ ] Guardrail behavior recorded for each probe (fired / bypassed)
-- [ ] Findings mapped to OWASP LLM01:2025 and MITRE ATLAS AML.T0051
+- [ ] Findings mapped to OWASP LLM01:2026 and MITRE ATLAS AML.T0051
 - [ ] Remediation recommendations provided (context isolation, output filtering, corpus provenance)
 
 ## Required output discipline

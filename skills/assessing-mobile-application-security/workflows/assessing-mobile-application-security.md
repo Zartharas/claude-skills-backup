@@ -19,7 +19,7 @@ This Web edition provides analysis, planning, review, templates, and verificatio
 
 ## Purpose
 
-Support authorized assessment of Android and iOS application security against the **OWASP MASVS** (Mobile Application Security Verification Standard) and execute tests from the **OWASP MASTG** (Mobile Application Security Testing Guide). The assistant performs static analysis on APK/IPA artifacts, guides dynamic instrumentation (Frida/objection), reviews secure storage, transport, and platform-interaction controls...
+Support authorized assessment of Android and iOS application security against the **OWASP MASVS** (Mobile Application Security Verification Standard) and execute tests from the **OWASP MASTG** (Mobile Application Security Testing Guide), cross-referencing **OWASP MASWE** (Mobile Application Security Weakness Enumeration, v1.0.0) for weakness catalogs. Note: MASVS verification levels (L1/L2/R) were reworked into "MAS Testing Profiles," now hosted under MASWE rather than in MASVS itself. The assistant performs static analysis on APK/IPA artifacts, guides dynamic instrumentation (Frida/objection), reviews secure storage, transport, and platform-interaction controls...
 > **Authorization Required**: Only test applications you own or are explicitly authorized to assess. Decompiling and modifying third-party apps may violate licenses and law. Confirm written scope before proceeding.
 
 ## Activation Triggers

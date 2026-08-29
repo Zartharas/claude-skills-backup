@@ -13,6 +13,8 @@ This Web edition provides analysis, planning, review, templates, and verificatio
 - When migrating workloads to the cloud and need to enforce security guardrails
 **Do not use** for runtime workload protection (use CWPP tools like Falco or Aqua), for application security testing (use DAST/SAST tools), or for network intrusion detection (use cloud-native IDS like GuardDuty or Network Watcher).
 
+**Market note:** Analysts and vendors increasingly frame CSPM as one component of a broader CNAPP (Cloud-Native Application Protection Platform), consolidated with CWPP, CIEM, and IaC scanning rather than sold standalone.
+
 ## Prerequisites
 
 - Multi-cloud credentials with read-only security audit permissions across all target environments

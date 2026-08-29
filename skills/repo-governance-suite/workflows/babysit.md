@@ -74,6 +74,10 @@ gh api graphql \
   -f threadId=<thread-id>
 ```
 
+## Troubleshooting
+
+- `resolveReviewThread` can 403 for fine-grained PATs scoped only to "Pull requests: Read and write" — GitHub currently also requires "Contents: read and write" for it even though the mutation changes no file content (open GitHub bug as of Aug 2026: https://github.com/orgs/community/discussions/204269). A 403 here isn't a workflow logic error; check the token's permissions before debugging further.
+
 ## Operating Rules
 
 - Keep the watcher running while long checks are pending.

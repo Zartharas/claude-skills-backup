@@ -23,6 +23,7 @@ This Web edition provides analysis, planning, review, templates, and verificatio
 
 Confirm installation requirements for Cosign and verify it can reach the Sigstore infrastructure:
 - Verify the approved signing-client version and trust configuration before use.
+- Cosign v3.0 (current) defaults to the bundle format and logs DSSE attestations to Rekor v2; verification flags built around Rekor v1 are on a deprecation path — confirm which Rekor API version and bundle format an existing pipeline targets before upgrading.
 
 ## Step 2: Keyless Signing with Cosign and Fulcio
 
@@ -36,6 +37,7 @@ Verify that artifacts were signed by expected identities from expected OIDC issu
 - Verify the signature, certificate identity and issuer, transparency-log inclusion, and current artifact digest before promotion.
 - Verify the file signature against the approved identity, issuer, bundle, timestamp, and transparency evidence.
 - **Verification failure modes**: Cosign returns a non-zero exit code on failure. Common failures include certificate identity mismatch, expired certificates without a valid Rekor timestamp, missing Rekor entry, and image digest mismatch (image was modified after signing).
+- **What verification does not prove**: a valid Fulcio certificate, Rekor entry, and OIDC-bound provenance/SLSA attestation prove signer identity and that the artifact wasn't tampered with after signing — they do not prove the build pipeline that produced the artifact wasn't compromised. In the TanStack (May 2026) and Shai-Hulud/ChainDrop (Aug 2026) incidents, malicious packages carried fully valid signing material. Pair signature verification with pipeline integrity controls: branch protection, required reviews on release workflows, and anomaly detection on release cadence and size.
 
 ## Step 4: Query the Rekor Transparency Log
 

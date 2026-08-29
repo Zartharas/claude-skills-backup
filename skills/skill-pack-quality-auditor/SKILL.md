@@ -1,15 +1,15 @@
 ---
 name: skill-pack-quality-auditor
-description: "Use to inspect, improve, consolidate, convert, or validate supplied ChatGPT, Codex, or Agent Skills packages. Check structure, triggers, progressive disclosure, safety, tool assumptions, source preservation, licensing, regression coverage, and archive integrity without claiming installation."
+description: "Use to inspect, improve, consolidate, convert, or validate supplied skill packages from any origin ecosystem (ChatGPT, Codex, Claude Code), now largely converged on the open agentskills.io Agent Skills specification. Check structure, triggers, progressive disclosure, safety, tool assumptions, source preservation, licensing, regression coverage, and archive integrity without claiming installation."
 ---
 
 # Skill Governance and Quality Auditor
 
 ## Purpose
 
-Use to inspect, improve, consolidate, convert, or validate supplied ChatGPT, Codex, or Agent Skills packages. Check structure, triggers, progressive disclosure, safety, tool assumptions, source preservation, licensing, regression coverage, and archive integrity without claiming installation.
+Use to inspect, improve, consolidate, convert, or validate supplied skill packages, regardless of which origin ecosystem (ChatGPT, Codex, Claude Code) they came from — the format has largely converged on the open agentskills.io Agent Skills specification rather than remaining three separate incompatible formats. Check structure, triggers, progressive disclosure, safety, tool assumptions, source preservation, licensing, regression coverage, and archive integrity without claiming installation.
 
-This is a ChatGPT Web instruction package. It is intentionally separated from the full Codex catalog: scripts, binaries, local hooks, source snapshots, and platform-specific executables are not bundled here.
+This package is intentionally separated from the full Codex catalog it originated from: scripts, binaries, local hooks, source snapshots, and platform-specific executables are not bundled here.
 
 ## Source aliases
 
@@ -17,7 +17,7 @@ Recognize these original workflow names as explicit aliases: `skill-pack-quality
 
 | Original alias | Read | Use when |
 |---|---|---|
-| `skill-pack-quality-auditor` | `workflows/skill-pack-quality-auditor.md` | Use to inspect, improve, convert, or validate ChatGPT, Codex, or Agent Skills folders and archives. Trigger when actual SKILL.md files or packages are supplied and the user wants compatibility classification... |
+| `skill-pack-quality-auditor` | `workflows/skill-pack-quality-auditor.md` | Use to inspect, improve, convert, or validate skill folders and archives from any origin ecosystem. Trigger when actual SKILL.md files or packages are supplied and the user wants compatibility classification... |
 
 Read only the workflow that matches the current request. Do not load every workflow in the family.
 

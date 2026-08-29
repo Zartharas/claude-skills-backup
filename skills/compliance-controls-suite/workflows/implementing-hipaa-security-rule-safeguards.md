@@ -31,7 +31,7 @@ This Web edition provides analysis, planning, review, templates, and verificatio
 3. **Safeguard status** — Administrative / Physical / Technical, each specification marked **Implemented / Partial / Gap** with required-vs-addressable noted.
 4. **BAA inventory** — business associates and BAA status.
 5. **Breach-notification readiness** — detection, four-factor assessment, notification workflow.
-6. **2025 NPRM gap view** — readiness against the proposed mandates (clearly labeled proposed).
+6. **NPRM gap view** — readiness against the proposed mandates (clearly labeled proposed); the Security Rule NPRM has been postponed to a July 2027 target on HHS's Long-Term Actions agenda.
 7. **Remediation plan** — prioritized, with owners and dates; required specs and risk-analysis gaps first.
 
 ## Required output discipline

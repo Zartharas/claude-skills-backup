@@ -59,7 +59,7 @@ smart_outline(file_path="services/worker-service.ts")
 
 **Parameters:**
 
-- `file_path` (string, required) -- Path to the file
+- `file_path` (string, required) -- Path to the file. Keep it within the project root; don't pass untrusted/externally-sourced paths (unresolved path-traversal finding in the claude-mem MCP server, issue #1251).
 
 ### Step 3: Unfold -- See Implementation
 
@@ -73,7 +73,7 @@ smart_unfold(file_path="services/worker-service.ts", symbol_name="shutdown")
 
 **Parameters:**
 
-- `file_path` (string, required) -- Path to the file (as returned by search/outline)
+- `file_path` (string, required) -- Path to the file (as returned by search/outline). Keep it within the project root; don't pass untrusted/externally-sourced paths (unresolved path-traversal finding in the claude-mem MCP server, issue #1251).
 - `symbol_name` (string, required) -- Name of the function/class/method to expand
 
 ## When to Use Standard Tools Instead
@@ -143,6 +143,8 @@ Use smart_* tools for code exploration, Read for non-code files. Mix freely.
 ## Language Support
 
 Smart-explore uses **tree-sitter AST parsing** for structural analysis. Unsupported file types fall back to text-based search.
+
+**Caution:** smart_search/smart_outline/smart_unfold depend on tree-sitter native bindings, which can fail silently on Windows and return 0 symbols with no error (claude-mem issues #1247, #1663). Treat a suspiciously thin or empty result as a signal to fall back to Grep/Glob/Read, not as proof nothing was found.
 
 ### Bundled Languages
 

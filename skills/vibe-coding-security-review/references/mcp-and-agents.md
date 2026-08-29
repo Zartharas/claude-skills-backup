@@ -39,6 +39,8 @@ grep -P '[\x{200B}-\x{200F}\x{202A}-\x{202E}\x{2060}-\x{206F}\x{FEFF}\x{E0000}-\
 
 ## Key CVEs to Know
 
+This list is illustrative, not exhaustive — 40+ new MCP-related CVEs were disclosed in 2026 alone. Check [vulnerablemcp.info](https://vulnerablemcp.info/) or the GitHub Advisory Database (search "mcp") live for current CVEs before relying on this table.
+
 | CVE | Severity | Product | Issue |
 |-----|----------|---------|-------|
 | CVE-2025-6514 | CVSS 9.6 | `mcp-remote` 0.0.5–0.1.15 | OAuth endpoint response passed to `open()` → PowerShell injection on Windows → RCE. 437k+ downloads. Fixed in 0.1.16. |
@@ -49,12 +51,14 @@ grep -P '[\x{200B}-\x{200F}\x{202A}-\x{202E}\x{2060}-\x{206F}\x{FEFF}\x{E0000}-\
 | CVE-2025-53967 | CVSS 8.0 | Framelink Figma MCP (600k+ downloads) | Falls back to `curl` via `child_process.exec` without sanitising user input → RCE. |
 | CVE-2025-59944 | CVSS unspecified | Cursor < 1.3 | Case-sensitivity mismatch allowed overwriting Cursor config → RCE. |
 | CVE-2025-66032 | CVSS 8.7 | Claude Code GitHub Action < v1.0.94 | Unauthenticated GitHub accounts could extract `ANTHROPIC_API_KEY`, `GEMINI_API_KEY`, `GITHUB_TOKEN`, and OIDC tokens. |
+| CVE-2026-47751 | GHSA-8q5r-mmjf-575q | `claude-code-action` (fixed after Mar 24 2026) | Malicious `.mcp.json` in a repo/PR leads to RCE in the Action's execution environment. |
 
 **Version checks to perform:**
 - Claude Code: must be ≥ 1.0.111 (CVE-2025-59536 fix)
 - Claude Code GitHub Action: must be ≥ v1.0.94 (CVE-2025-66032 fix)
 - `mcp-remote`: must be ≥ 0.1.16 (CVE-2025-6514 fix)
 - MCP Inspector: must be ≥ 0.14.1 (CVE-2025-49596 fix)
+- `claude-code-action`: pin to a version released after March 24 2026 (CVE-2026-47751 / GHSA-8q5r-mmjf-575q fix)
 
 ## SSRF via Agent HTTP Calls
 

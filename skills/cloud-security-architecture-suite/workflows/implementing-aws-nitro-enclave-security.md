@@ -19,6 +19,7 @@ This Web edition provides analysis, planning, review, templates, and verificatio
 - An AWS KMS symmetric key with key policy permissions for the enclave's IAM role
 - The aws-nitro-enclaves-sdk-c or Python aws-encryption-sdk for enclave-side KMS operations
 - An approved Nitro Enclaves allocator configuration with sufficient memory and vCPU reservations.
+- Nitro Enclaves has been available in all AWS regions since October 2025; no region-availability caveat applies.
 
 ## Step 1: Configure the Nitro Enclaves Environment
 

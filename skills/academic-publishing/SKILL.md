@@ -104,7 +104,10 @@ For a paper, request it with these lenses instead:
 - **Reproducibility** — could someone else run this from what's written
 - **Research ethics** — IRB/consent where human subjects are involved, data
   provenance, conflicts of interest, authorship criteria (did everyone listed meet
-  authorship criteria, e.g. ICMJE's four criteria — not just "helped somehow")
+  authorship criteria, e.g. ICMJE's four criteria — not just "helped somehow");
+  **AI-use disclosure** — per ICMJE's Section V (Jan 2026), confirm the manuscript
+  discloses any AI tool used in drafting, analysis, or literature search per the
+  target journal's policy, and that no AI system is listed as an author
 - **Clarity & argument** — does each section answer its reader's question; is the
   through-line from question → gap → finding → implication intact
 
@@ -171,6 +174,10 @@ A profile is a portfolio, not a single paper. A few things that compound:
 - **No fabricated citations, ever, under any framing.** If a claim needs a source
   and none can be verified, say so and flag the gap — don't paper over it with a
   plausible-sounding but unverified reference.
+- **Disclose AI use, never list AI as an author.** Per ICMJE's Section V (Jan
+  2026), confirm the manuscript discloses any AI tool used in drafting, analysis,
+  or literature search per target-journal policy, and that no AI system appears
+  in the author list.
 - **No guarantee of acceptance.** Journal decisions involve fit, timing, and
   reviewer variance beyond what any preparation can control for; frame
   recommendations as improving odds, not promising outcomes.

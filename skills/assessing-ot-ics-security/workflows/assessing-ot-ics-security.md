@@ -29,7 +29,7 @@ This skill activates when the user asks about:
 - Modbus, DNP3, S7comm, EtherNet/IP, BACnet, OPC-UA, IEC 61850/104 protocols
 - PLC, RTU, HMI, historian, or engineering-workstation security
 - Purdue model / ISA-95 segmentation and IT/OT boundary review
-- IEC 62443, NIST SP 800-82, or NERC CIP alignment
+- IEC 62443, NIST SP 800-82 (Rev. 3, retitled "Guide to Operational Technology (OT) Security"; expanded scope covers building automation, physical access control, transportation, and environmental monitoring systems, with explicit IT/OT convergence attack-surface guidance), or NERC CIP alignment (name current standards: CIP-003-9, CIP-012-2, and the pending CIP-015 EACMS/PACS scope extension due Sept 2, 2026)
 - MITRE ATT&CK for ICS technique mapping
 - Internet-exposed ICS devices (Shodan/Censys dorks) or ICS asset inventory
 - OT threat detection, anomaly monitoring, or ICS incident response

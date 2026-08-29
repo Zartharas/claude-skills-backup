@@ -6,7 +6,7 @@ This Web edition provides analysis, planning, review, templates, and verificatio
 
 ## Overview
 
-Cloud incident containment requires cloud-native approaches that differ significantly from traditional on-premises response. Containment procedures must leverage platform-specific controls including security groups, IAM policies, network ACLs, and service-level isolation to restrict compromised resources while preserving forensic evidence. According to the 2025 Unit 42 Global Incident Response Report, responding t...
+Cloud incident containment requires cloud-native approaches that differ significantly from traditional on-premises response. Containment procedures must leverage platform-specific controls including security groups, IAM policies, network ACLs, and service-level isolation to restrict compromised resources while preserving forensic evidence. According to the 2026 Unit 42 Global Incident Response Report, the median intrusion-to-exfiltration time is now 72 minutes, ~90% of incidents involve identity-driven access, 87% are multi-surface intrusions, and attacker tradecraft is increasingly AI-accelerated (https://www.paloaltonetworks.com/blog/2026/02/unit-42-global-ir-report/).
 
 ## When to Use
 

@@ -11,6 +11,8 @@ Fast browser automation CLI for AI agents. Chrome/Chromium via CDP with accessib
 
 Install: `npm i -g agent-browser && agent-browser install`
 
+Keep it current: run `npm i -g agent-browser@latest` (or `agent-browser update`) periodically — an outdated binary can miss new commands (e.g. diff/--annotate) and bug fixes.
+
 ## Start here
 
 This file is a discovery stub, not the usage guide. Before running any `agent-browser` command, load the actual workflow content from the CLI:

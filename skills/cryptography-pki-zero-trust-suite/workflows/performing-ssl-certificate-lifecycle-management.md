@@ -29,10 +29,11 @@ SSL/TLS certificate lifecycle management encompasses the full process of request
 
 - Set up automated monitoring for all certificates
 - Use ECDSA (P-256) certificates for better performance over RSA
-- Enable OCSP stapling on all servers
+- Prefer CRL-based revocation checking by default; treat OCSP stapling as a fallback only where CRL distribution is impractical — Let's Encrypt fully shut down its OCSP service in August 2025
 - Implement Certificate Transparency log monitoring
 - Maintain inventory of all certificates and their locations
 - Plan for CA compromise scenarios (key pinning, backup CAs)
+- CA/Browser Forum SC-081 is a named compliance driver: max TLS certificate lifetime is 200 days from Mar 2026 (already in effect), 100 days from Mar 2027, and 47 days from Mar 2029 — at these lifetimes, ACME-based issuance/renewal automation is effectively mandatory, not just a best practice
 
 ## Validation Criteria
 

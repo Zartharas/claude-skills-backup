@@ -18,6 +18,26 @@
     "changes": [
       "Restored the Output section's compact-block template, which was truncated/missing in the original condensation.",
       "Replaced generic 'host-available model/effort' language with Claude-specific controls: model tiers (Haiku 4.5, Sonnet 5, Opus 5, Fable 5), the /fast toggle, and extended thinking / host effort tiers."
+    ],
+    "note_added_2026-08-28": "The '/fast toggle' and the specific model names above were not verified against current documentation at the time. See the 2026-08-28 revision entry below for the correction."
+  },
+  "revision_2026-08-28": {
+    "requested_by": "user, explicitly asking for a documentation-verified update focused on minimizing total token usage, not just model selection",
+    "verification_performed": "Checked current Claude Platform docs (extended thinking, adaptive thinking, effort) via web search before making any factual claim.",
+    "corrections": [
+      "Removed the '/fast' toggle — could not be verified against current documentation in the 2026-08-05 revision or this one; treated as unconfirmed and dropped rather than carried forward.",
+      "Replaced hardcoded model point-release names (which had already drifted once between skill revisions) with tier/capability descriptions plus an explicit instruction to verify the exact current model string before hardcoding it anywhere.",
+      "Corrected extended-thinking mechanics: manual budget_tokens thinking is being phased out on newer models in favor of adaptive thinking governed by the effort parameter (low/medium/high/max); effort support is model-specific, not universal.",
+      "Added the cost fact that thinking tokens are billed as output tokens even when only a summary is displayed, and that high effort increases the risk of hitting the max_tokens ceiling and truncating the response."
+    ],
+    "additions": [
+      "Added 'Lever B' — structural token-saving practices independent of model choice (avoiding redundant tool calls, targeted retrieval, prompt caching, batch processing for bulk non-interactive work, output-length matching, conversation-length management). The prior revisions covered only model/effort selection despite the skill's stated purpose of minimizing total token usage.",
+      "Documented the overlap with a separately-installed 'model-tier-advisor' skill (built without checking for this skill's existence) and recommended consolidating onto this skill rather than running both."
     ]
+  },
+  "revision_2026-08-28b": {
+    "trigger": "User feedback: 'optimize for lowest sufficient capability, not hard-coding model names.'",
+    "problem": "The same-day revision above still paired each capability band with a specific example name (e.g. Haiku / e.g. Sonnet / e.g. Opus) despite an explicit instruction not to hardcode. Repeated name-to-tier association is a soft form of hardcoding even when hedged as illustrative.",
+    "fix": "Removed all example model names from the model-tier section. Reframed around the named principle 'lowest sufficient capability' as the explicit governing rule, with bands described purely by capability need (low/moderate/high/specialized) rather than by any current or example model identity. Verified no other model name remained anywhere in the workflow file or SKILL.md."
   }
 }

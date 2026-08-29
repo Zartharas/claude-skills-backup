@@ -4,9 +4,9 @@
 
 Use for complex, consequential, cross-domain decisions that need several relevant expert lenses, evidence reconciliation, adversarial challenge, and an actionable recommendation. Trigger for cybersecurity, architecture, incident response, GRC, research design, legal-risk, or operational decisions with competing constraints. Do not activate for simple questions or simulate a theatrical panel.
 
-## Web execution boundary
+## Execution boundary
 
-This Web edition provides analysis, planning, review, templates, and verification guidance. It does not imply that a scanner, cloud account, repository, endpoint, HSM, SIEM, SOAR, or other external system is connected. Begin read-only. Require explicit authorization, confirmed scope, available tools, and rollback conditions before any live action.
+This workflow provides analysis, planning, review, templates, and verification guidance. It does not imply that a scanner, cloud account, repository, endpoint, HSM, SIEM, SOAR, or other external system is connected. Begin read-only. Require explicit authorization, confirmed scope, available tools, and rollback conditions before any live action. When run in Claude Code, expert lenses may be executed as parallel subagents via the Task/Agent tool rather than a single sequential pass.
 
 ## Purpose
 
@@ -89,4 +89,4 @@ Before finalizing:
 - Provide validation steps, unresolved issues, residual risk, and the next authorization gate.
 - Never claim execution, access, containment, compliance, certification, or verification that was not observed.
 
-_Source workflow alias: multi-expert-analysis. Condensed from the validated Codex source for the ChatGPT Web edition; executable examples and local-only artifacts were intentionally omitted._
+_Source workflow alias: multi-expert-analysis. Condensed from the validated Codex source; executable examples and local-only artifacts were intentionally omitted. Host-agnostic — runs under Claude Code (or another Agent Skills host), not exclusively ChatGPT Web._

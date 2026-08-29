@@ -9,7 +9,9 @@ credibility than the paper gains — and it's very hard to undo after publicatio
 - **Index membership**: check DOAJ (doaj.org), Scopus, Web of Science, or the
   field's disciplinary index *directly* — via `web_search` — rather than trusting
   a badge/logo displayed on the journal's own website. Badges are trivially
-  faked.
+  faked. DOAJ has issued quarterly criteria updates with a public change log
+  since 2025 — optionally check the change log for the journal's specific type
+  when screening.
 - **Editorial board**: are the named editors real, findable, affiliated where
   claimed? Search a few names independently. A board of real academics who don't
   know they're listed is a known predatory pattern.

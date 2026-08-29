@@ -54,7 +54,7 @@ The General Data Protection Regulation (EU) 2016/679 (GDPR) is the EU's comprehe
 
 1. Appoint Data Protection Officer (DPO) if required
 2. Develop data protection policies and procedures
-3. Create breach notification procedures (72-hour timeline)
+3. Create breach notification procedures (72-hour timeline; watch for adoption: the EU Digital Omnibus proposal would raise the threshold to "high risk only" and extend the deadline to 96 hours — not yet adopted)
 4. Establish data subject request (DSR) handling procedures
 5. Implement vendor management with Data Processing Agreements (DPAs)
 

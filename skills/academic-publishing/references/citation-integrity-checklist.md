@@ -9,16 +9,21 @@ per-citation gate, not a one-time read.
 1. **Locate the actual source.** Use `web_search` to find it, `web_fetch` to read
    it. Training-data familiarity with a paper's existence or general topic is not
    the same as having read the specific passage that supports your claim.
-2. **Find the specific passage**, not just the paper. A citation should point to
+2. **Check the source hasn't itself been retracted.** Existing isn't the same as
+   trustworthy — a May 2026 Lancet-published bibliometric audit found fabricated
+   references in ~1-in-277 PubMed-indexed papers (12x the 2023 rate). Check
+   Retraction Watch's database or the journal's site for a retraction/correction
+   notice before citing.
+3. **Find the specific passage**, not just the paper. A citation should point to
    the part of the source that actually makes the claim, not the paper's general
    vicinity.
-3. **Check the claim matches the source's claim**, not just the source's topic.
+4. **Check the claim matches the source's claim**, not just the source's topic.
    "Smith (2023) found X" requires Smith (2023) to actually report finding X —
    not merely to discuss the subject X falls under.
-4. **Check direction and certainty match.** If the source says "may contribute to"
+5. **Check direction and certainty match.** If the source says "may contribute to"
    and the draft says "causes," that's a misrepresentation even with the right
    citation attached.
-5. **If it can't be verified, mark it, don't cite it.** Use `[COULD NOT VERIFY —
+6. **If it can't be verified, mark it, don't cite it.** Use `[COULD NOT VERIFY —
    claim needs a different source or should be softened/removed]` inline rather
    than citing something unconfirmed or dropping the claim silently.
 

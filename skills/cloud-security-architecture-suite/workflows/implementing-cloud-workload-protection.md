@@ -8,6 +8,8 @@ Use to design or implement cloud-workload protection for authorized compute, con
 
 This Web edition provides analysis, planning, review, templates, and verification guidance. It does not imply that a scanner, cloud account, repository, endpoint, HSM, SIEM, SOAR, or other external system is connected. Begin read-only. Require explicit authorization, confirmed scope, available tools, and rollback conditions before any live action.
 
+**Market note:** Analysts and vendors increasingly frame CWPP as one component of a broader CNAPP (Cloud-Native Application Protection Platform), consolidated with CSPM, CIEM, and IaC scanning rather than sold standalone.
+
 ## When to Use
 
 - When deploying or configuring implementing cloud workload protection capabilities in your environment

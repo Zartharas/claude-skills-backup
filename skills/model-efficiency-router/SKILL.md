@@ -1,15 +1,15 @@
 ---
 name: model-efficiency-router
-description: "Use to choose an appropriate reasoning depth, tool plan, evidence budget, and execution mode based on consequence, uncertainty, reversibility, complexity, and available host capabilities. It recommends a workflow budget but cannot change the active model itself."
+description: "Use to choose an appropriate reasoning depth, model tier, and structural approach based on consequence, uncertainty, reversibility, complexity, and token-efficiency — covering both which model/effort to use and how to structure the work (avoiding redundant calls, targeted retrieval, caching, batching) to minimize total tokens spent. It recommends a workflow budget but cannot change the active model itself."
 ---
 
 # Model Efficiency Router
 
 ## Purpose
 
-Use to choose an appropriate reasoning depth, tool plan, evidence budget, and execution mode based on consequence, uncertainty, reversibility, complexity, and available host capabilities. It recommends a workflow budget but cannot change the active model itself.
+Use to choose an appropriate reasoning depth, model tier, and structural approach — both which model/effort to use and how to structure the work to minimize total tokens spent — based on consequence, uncertainty, reversibility, complexity, and available host capabilities. It recommends a workflow budget but cannot change the active model itself.
 
-This package originated as a ChatGPT/Codex Web instruction pack and has been adapted for Claude Code: it references Claude's actual model tiers (Haiku 4.5, Sonnet 5, Opus 5, Fable 5) and reasoning controls (`/fast`, extended thinking, host effort tiers) rather than generic placeholders. Scripts, binaries, local hooks, and platform-specific executables are still not bundled here — this is instruction-only.
+This package originated as a ChatGPT/Codex Web instruction pack and has been adapted for Claude Code. It routes on two levers: model tier / reasoning effort, and structural token-saving practices independent of model choice (avoiding redundant tool calls, targeted retrieval, prompt caching, batch processing, output-length matching). Model and control names are described by tier/capability rather than hardcoded, since exact point-release names drift — verify current names against docs.claude.com before hardcoding one into a script or API call. Scripts, binaries, local hooks, and platform-specific executables are still not bundled here — this is instruction-only.
 
 ## Source aliases
 
@@ -55,4 +55,4 @@ Before finishing, confirm that routing was specific, no unsupported capability w
 
 ## Package provenance
 
-Built on 2026-07-29 from the validated 51-skill Codex catalog. Source hashes and retained license notices are recorded in `source-map.json`. Routing tests are in `evals/routing-tests.json`.
+Built on 2026-07-29 from the validated 51-skill Codex catalog. Source hashes and retained license notices are recorded in `source-map.json`. Routing tests are in `evals/routing-tests.json`. Revised 2026-08-28 — see `source-map.json` for what changed and why.

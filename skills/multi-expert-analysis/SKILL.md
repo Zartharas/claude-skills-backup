@@ -9,7 +9,9 @@ description: "Use for consequential or ambiguous decisions that benefit from sev
 
 Use for consequential or ambiguous decisions that benefit from several independent expert lenses, evidence grading, devil’s-advocate challenge, reconciliation, and explicit decision conditions. Do not invoke for simple factual lookups or routine edits.
 
-This is a ChatGPT Web instruction package. It is intentionally separated from the full Codex catalog: scripts, binaries, local hooks, source snapshots, and platform-specific executables are not bundled here.
+This package is condensed from a Codex-catalog source; it is intentionally separated from the full catalog: scripts, binaries, local hooks, source snapshots, and platform-specific executables are not bundled here.
+
+Claude Code execution note: when run inside Claude Code, this skill may use the Task/Agent tool to spawn one parallel subagent per selected expert lens, each returning independent findings before the reconciliation/devil's-advocate step, rather than assuming no tool access at all.
 
 ## Source aliases
 

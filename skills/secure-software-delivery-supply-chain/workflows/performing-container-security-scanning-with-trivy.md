@@ -41,6 +41,7 @@ Detect misconfigurations in Dockerfiles, Kubernetes YAML, Terraform, and Helm ch
 ## Step 4: Integrate into CI/CD
 
 Add Trivy scanning as a pipeline gate that blocks builds with critical/high vulnerabilities, generates SARIF reports for GitHub Advanced Security, and produces JUnit XML for test dashboards.
+- `aquasecurity/trivy-action` itself was tag-hijacked Feb-Apr 2026 (75/76 tags force-pushed, 10,000+ repos affected); pin the action to a full commit SHA rather than a version tag (e.g. `uses: aquasecurity/trivy-action@<full-sha>`), not `@master` or `@v0.x`.
 
 ## Expected Output
 

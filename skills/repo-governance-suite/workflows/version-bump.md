@@ -5,6 +5,8 @@
 
 **CRITICAL:** Commit EVERYTHING (including build artifacts). At the end of this workflow, NOTHING should be left uncommitted or unpushed. Run `git status` at the end to verify.
 
+**Scope note:** This workflow is currently written specifically for the claude-mem repo — the manifest paths, npm scripts, and Discord notify step below are hardcoded to it. Before using this on any other project, confirm the manifest paths and scripts actually exist in the target repo.
+
 ## Preparation
 
 1.  **Analyze**: Determine if the change is **PATCH** (bug fixes), **MINOR** (features), or **MAJOR** (breaking).

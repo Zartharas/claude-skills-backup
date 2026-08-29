@@ -4,6 +4,8 @@
 
 Use to design, implement, or audit artifact code signing with platform, PKI, or keyless mechanisms: key protection, identity, signing, verification, timestamping, policy, CI integration, revocation, and evidence. Trigger for build or release integrity. Never embed private keys or claim provenance from a signature alone.
 
+A valid signature and certificate chain prove signer identity and post-signing integrity, not that the build pipeline producing the artifact was uncompromised — the TanStack (May 2026) and Shai-Hulud/ChainDrop (Aug 2026) incidents shipped malicious packages with fully valid signing material. Pair signature verification with pipeline integrity controls: branch protection, required reviews on release workflows, and anomaly detection on release cadence and size.
+
 ## Web execution boundary
 
 This Web edition provides analysis, planning, review, templates, and verification guidance. It does not imply that a scanner, cloud account, repository, endpoint, HSM, SIEM, SOAR, or other external system is connected. Begin read-only. Require explicit authorization, confirmed scope, available tools, and rollback conditions before any live action.
