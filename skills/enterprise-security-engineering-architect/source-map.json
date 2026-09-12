@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0",
+  "principle": "Stable methods are packaged; dynamic product facts must be verified live.",
+  "source_tiers": [
+    "official_product_docs",
+    "official_api_schema_repo",
+    "official_kb_support",
+    "official_engineering_or_threat_research",
+    "maintainer_forum",
+    "community_forum",
+    "independent_blog"
+  ],
+  "core": {
+    "nist_csf": "https://www.nist.gov/cyberframework",
+    "nist_zero_trust": "https://csrc.nist.gov/publications/detail/sp/800-207/final",
+    "mitre_attack": "https://attack.mitre.org/",
+    "mitre_d3fend": "https://d3fend.mitre.org/",
+    "mitre_car": "https://car.mitre.org/",
+    "ocsf": "https://schema.ocsf.io/",
+    "sigma": "https://sigmahq.io/",
+    "opentelemetry": "https://opentelemetry.io/docs/",
+    "stix_taxii": "https://oasis-open.github.io/cti-documentation/"
+  },
+  "vendors": {
+    "splunk": [
+      "https://help.splunk.com/",
+      "https://github.com/splunk/splunk-agent-skills",
+      "https://github.com/splunk/security_content"
+    ],
+    "microsoft_security": [
+      "https://learn.microsoft.com/azure/sentinel/",
+      "https://learn.microsoft.com/defender-xdr/",
+      "https://github.com/Azure/Azure-Sentinel"
+    ],
+    "crowdstrike": [
+      "https://developer.crowdstrike.com/",
+      "https://github.com/CrowdStrike/falconpy"
+    ],
+    "zscaler": [
+      "https://help.zscaler.com/"
+    ],
+    "palo_alto": [
+      "https://docs.paloaltonetworks.com/",
+      "https://unit42.paloaltonetworks.com/"
+    ],
+    "cisco": [
+      "https://www.cisco.com/c/en/us/support/security/",
+      "https://blog.talosintelligence.com/"
+    ],
+    "fortinet": [
+      "https://docs.fortinet.com/",
+      "https://www.fortiguard.com/"
+    ],
+    "trellix": [
+      "https://docs.trellix.com/",
+      "https://www.trellix.com/advanced-research-center/"
+    ],
+    "netskope": [
+      "https://docs.netskope.com/"
+    ],
+    "duo": [
+      "https://duo.com/docs/adminapi"
+    ],
+    "tenable": [
+      "https://developer.tenable.com/",
+      "https://docs.tenable.com/"
+    ],
+    "qualys": [
+      "https://docs.qualys.com/"
+    ],
+    "rapid7": [
+      "https://docs.rapid7.com/insightvm/"
+    ],
+    "opencti": [
+      "https://docs.opencti.io/"
+    ],
+    "misp": [
+      "https://www.misp-project.org/"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+interface:
+  display_name: "Enterprise Security Engineering Architect"
+  short_description: "L3/L4/L5 enterprise security engineering, architecture, troubleshooting, integration, and applied research."
+  brand_color: "#0F766E"
+  default_prompt: "Use $enterprise-security-engineering-architect to analyze this enterprise security engineering or architecture task using the shortest evidence-first path."
+
+policy:
+  allow_implicit_invocation: false
