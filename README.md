@@ -10,6 +10,11 @@ mkdir -p ~/.claude/skills
 cp -R claude-skills-backup/skills/. ~/.claude/skills/
 ```
 
+## MCP servers
+
+`mcp-servers/` backs up stdio MCP server configs (no secrets) for restoring alongside the
+skills — see [mcp-servers/README.md](mcp-servers/README.md).
+
 ## Notes
 
 - `agent-browser` was originally a symlink to `~/.agents/skills/agent-browser` on the source machine; it's stored here as a real copy so the repo is self-contained. If your new machine also has `~/.agents/skills/agent-browser` and you want the symlink relationship back, replace the copied folder with a symlink after restoring.
